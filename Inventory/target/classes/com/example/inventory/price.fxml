@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<BorderPane fx:id="rootborder" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventory.PriceController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #59eee9;">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" prefHeight="74.0" prefWidth="249.0" text="Pricing">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="183.0" text="Unit cost price" />
+            <TextField fx:id="unitcost" layoutX="47.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="168.0" promptText="Enter unit price" />
+            <Label layoutX="46.0" layoutY="96.0" prefHeight="36.0" prefWidth="154.0" text="Cost" textFill="#111110">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="250.0" text="Bulk cost price" />
+            <TextField fx:id="bulkcost" layoutX="47.0" layoutY="267.0" prefHeight="25.0" prefWidth="168.0" promptText="Enter unit price" />
+            <AnchorPane layoutX="230.0" layoutY="5.0" prefHeight="500.0" prefWidth="212.0" style="-fx-background-color: #59eee9;">
+               <children>
+                  <Label layoutX="14.0" layoutY="101.0" prefHeight="36.0" prefWidth="154.0" text="Sale">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="189.0" text="Unit selling price" />
+                  <TextField fx:id="unitsell" layoutX="20.0" layoutY="206.0" prefHeight="25.0" prefWidth="168.0" promptText="Enter unit price" />
+                  <Label layoutX="20.0" layoutY="257.0" text="Bulk selling price" />
+                  <TextField fx:id="bulksell" layoutX="20.0" layoutY="274.0" prefHeight="25.0" prefWidth="168.0" promptText="Enter bulk price" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="443.0" layoutY="105.0" prefHeight="36.0" prefWidth="154.0" text="Discount">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="464.0" layoutY="194.0" text="Discount" />
+            <TextField fx:id="discount" layoutX="463.0" layoutY="213.0" prefHeight="25.0" prefWidth="115.0" promptText="Enter discount" />
+            <Label fx:id="successLabel" alignment="CENTER" layoutX="459.0" layoutY="333.0" prefHeight="25.0" prefWidth="124.0" textFill="#3d8628" />
+            <Button fx:id="submitButton" layoutX="456.0" layoutY="271.0" mnemonicParsing="false" onAction="#submitOnAction" prefHeight="61.0" prefWidth="124.0" style="-fx-background-color: #f0f800;" text="Submit &amp; Continue" textFill="#141413">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

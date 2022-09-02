@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootborder" prefHeight="500.0" prefWidth="950.0" style="-fx-background-color: #59eee9;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventory.CategoryController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="-160.0" prefHeight="500.0" prefWidth="173.0" style="-fx-background-color: #59eee9;">
+               <children>
+                  <ImageView fitHeight="97.0" fitWidth="167.0" layoutX="246.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@p8.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="229.0" layoutY="3.0" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #59eee9;">
+               <children>
+                  <Label layoutX="24.0" layoutY="14.0" prefHeight="50.0" prefWidth="250.0" text="Category Details" textFill="#0a0a0a">
+                     <font>
+                        <Font name="System Italic" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="92.0" prefHeight="28.0" prefWidth="75.0" text="Category" />
+                  <TextField fx:id="category" layoutX="99.0" layoutY="94.0" prefHeight="25.0" prefWidth="311.0" promptText="Enter category of product(eg: shoe.cloth,vegetable ect)" />
+                  <TextField fx:id="type" layoutX="99.0" layoutY="141.0" prefHeight="25.0" prefWidth="307.0" promptText="Enter input (Finisihed good,raw,semi-finished good" />
+                  <Label layoutX="24.0" layoutY="139.0" prefHeight="28.0" prefWidth="75.0" text="Input type" />
+                  <Button fx:id="submitButton" layoutX="268.0" layoutY="181.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #adf200;" text="Submit &amp; Continue" textFill="#111010">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="148.0" fitWidth="158.0" layoutX="255.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@p1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="successLabel" layoutX="109.0" layoutY="170.0" prefHeight="28.0" prefWidth="146.0" textFill="#0da40d" />
+                  <Accordion layoutX="415.0" layoutY="92.0" prefHeight="411.0" prefWidth="238.0">
+                    <panes>
+                      <TitledPane animated="false" text="Keep Track">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@t1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <TextArea editable="false" layoutX="18.0" layoutY="150.0" prefHeight="128.0" prefWidth="191.0" promptText="Keep track of business deals, customer information, and projects across your organization by following these digital transformation tips." />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Search inventory">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="145.0" fitWidth="223.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@s1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <TextArea layoutX="13.0" layoutY="159.0" prefHeight="123.0" prefWidth="200.0" promptText=" Management information searching for decision making ; This article will also investigate how the search for information may be better defined." />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Easy with delivery">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="218.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@d1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <TextArea editable="false" layoutX="18.0" layoutY="128.0" prefHeight="155.0" prefWidth="200.0" promptText="Delivery management is the function of applying processes to ensure goods are effectively and efficiently transferred from one location to the next. Sometimes called dispatch or fleet management, it answers the question, “How do we get this item from point A to point B?”" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="For easy forecasting">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@f1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <TextArea editable="false" layoutX="18.0" layoutY="114.0" prefHeight="167.0" prefWidth="200.0" promptText="Forecasting is the process of projecting past sales demand into the future. Implementing a forecasting system enables you to assess current market trends and sales quickly so that you can make informed decisions about the operations. You can use forecasts to make planning decisions about: Customer orders." />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="85.0" text="Effective time management">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="18.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@t2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <TextArea editable="false" layoutX="14.0" layoutY="121.0" prefHeight="160.0" prefWidth="200.0" promptText="Time management is the process of organizing and planning how to divide your time between different activities. Get it right, and you'll end up working smarter, not harder, to get more done in less time – even when time is tight and pressures are high. The highest achievers manage their time exceptionally well." />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+                  <Label layoutX="415.0" layoutY="75.0" text="Benefit of Inventory Management System">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootborderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventory.HelloController">
+   <left>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="206.0" fitWidth="239.0" layoutX="75.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@p1.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="signupButton" layoutX="59.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signupOnAction" prefHeight="37.0" prefWidth="275.0" style="-fx-background-color: #e3ee06;" text="SignUp" textFill="#212220">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="56.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="248.0" text="Inventory Management System" textAlignment="CENTER">
+               <font>
+                  <Font name="Eras Medium ITC" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="127.0" layoutY="125.0" prefHeight="25.0" prefWidth="179.0" />
+            <PasswordField fx:id="enterPasswordField" layoutX="129.0" layoutY="188.0" prefHeight="25.0" prefWidth="177.0" />
+            <Label layoutX="20.0" layoutY="129.0" prefHeight="17.0" prefWidth="80.0" text="Username">
+               <font>
+                  <Font name="Droid Sans Mono Slashed" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="192.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="109.0" text="Password">
+               <font>
+                  <Font name="Droid Sans Mono Dotted" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="34.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loginButtonOnClick" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #34c32a;" text="Login">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="loginMessageLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="283.0" prefHeight="17.0" prefWidth="242.0" textFill="#ff0027">
+               <font>
+                  <Font name="Corbel Bold Italic" size="13.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

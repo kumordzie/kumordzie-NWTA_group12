@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootborderpane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventory.RegisterController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <AnchorPane fx:id="successLabel" layoutX="-4.0" layoutY="-4.0" prefHeight="400.0" prefWidth="350.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="26.0" prefHeight="32.0" prefWidth="289.0" text="Inventory Management System">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.9857142857142858" startY="0.04761904761904756">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.75" green="0.0451388880610466" blue="0.0451388880610466" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <ImageView fitHeight="93.0" fitWidth="160.0" layoutX="14.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@p2.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="84.0" fitWidth="160.0" layoutX="185.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@p3.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="216.0" fitWidth="389.0" layoutX="14.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@p4.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="323.0" layoutY="-1.0" prefHeight="400.0" prefWidth="350.0">
+               <children>
+                  <Label layoutX="39.0" layoutY="31.0" prefHeight="33.0" prefWidth="299.0" text="Registration Platform" textFill="#ed0c0c">
+                     <font>
+                        <Font name="Bauhaus 93" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="75.0" text="First name" />
+                  <Label layoutX="195.0" layoutY="75.0" text="Last name" />
+                  <TextField fx:id="firstnameTextField" layoutX="39.0" layoutY="92.0" prefHeight="25.0" prefWidth="140.0" />
+                  <TextField fx:id="lastnameTextField" layoutX="195.0" layoutY="92.0" />
+                  <TextField fx:id="usernameTextField" layoutX="46.0" layoutY="144.0" prefHeight="25.0" prefWidth="299.0" />
+                  <Label layoutX="46.0" layoutY="127.0" text="Username" />
+                  <Label layoutX="46.0" layoutY="183.0" text="Password" />
+                  <Label layoutX="46.0" layoutY="238.0" text="Confirm Password" />
+                  <Button fx:id="registerButton" layoutX="263.0" layoutY="298.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #ffd900;" text="Register" textFill="#171616">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="loginButton" layoutX="263.0" layoutY="341.0" mnemonicParsing="false" onAction="#loginButtonOnClick" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #0a33ff;" text="Login" textFill="#ebe3e3">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="setPasswordField" layoutX="46.0" layoutY="200.0" prefHeight="25.0" prefWidth="299.0" />
+                  <PasswordField fx:id="confirmPasswordField" layoutX="46.0" layoutY="255.0" prefHeight="25.0" prefWidth="299.0" />
+                  <Label fx:id="wrongPasswordLabel" alignment="CENTER" layoutX="165.0" layoutY="238.0" prefHeight="17.0" prefWidth="173.0" textFill="RED" />
+                  <Label fx:id="sucessLabel" alignment="CENTER" layoutX="46.0" layoutY="305.0" prefHeight="25.0" prefWidth="207.0" textFill="#dd4e4e" />
+                  <Label fx:id="userLabel" layoutX="104.0" layoutY="120.0" prefHeight="24.0" prefWidth="244.0" textFill="#f20000" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

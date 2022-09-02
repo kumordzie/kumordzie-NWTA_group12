@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootborderpane" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventory.SupplierController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="628.0">
+         <children>
+            <AnchorPane layoutX="-2.0" prefHeight="407.0" prefWidth="237.0">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="264.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@p7.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="269.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #64e8e5;">
+               <children>
+                  <Label layoutX="21.0" layoutY="23.0" text="Supplier Details" textFill="#eb0f08">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameTextField" layoutX="133.0" layoutY="88.0" prefHeight="36.0" prefWidth="202.0" promptText="Enter supplier's name" />
+                  <TextField fx:id="contactTextField" layoutX="133.0" layoutY="141.0" prefHeight="36.0" prefWidth="202.0" promptText="Enter supplier's contact" />
+                  <Label layoutX="22.0" layoutY="86.0" prefHeight="29.0" prefWidth="90.0" text="Supplier's name" />
+                  <Label layoutX="22.0" layoutY="145.0" prefHeight="29.0" prefWidth="96.0" text="Supplier's contact" />
+                  <Label layoutX="22.0" layoutY="208.0" prefHeight="29.0" prefWidth="90.0" text="Supply date" />
+                  <Button fx:id="submitButton" layoutX="133.0" layoutY="259.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="25.0" prefWidth="202.0" style="-fx-background-color: #00e400;" text="Submit &amp; Continue" textFill="#141414">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Label fx:id="successLabel" alignment="CENTER" layoutX="133.0" layoutY="303.0" prefHeight="17.0" prefWidth="196.0" textFill="#257904" />
+                  <DatePicker fx:id="datep" layoutX="126.0" layoutY="210.0" prefHeight="25.0" prefWidth="201.0" promptText="Select delivery date" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
